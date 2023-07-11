@@ -1,0 +1,573 @@
+
+.container{
+    max-width: 1350px;
+}
+Header{
+    position: relative;
+    display: block;
+    padding: 10px;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+}
+.logo a{
+    text-decoration:none;
+    color: #000;
+
+}
+.Headcenter{
+    position: relative;
+    text-align: center;
+    top: 10px;
+}
+.centerLog{
+    padding: 0 10px;
+    text-decoration: none;
+    color: #000;
+}
+.navLeft{
+    color: #000;
+}
+.Headleft{
+    display: flex;
+    gap: 30px;
+    
+}
+/* ******************** */
+.sqrTop{
+    width:60px; 
+    height:60px; 
+    border:1px solid grey;
+    position: relative;
+    bottom: 50px;
+    right: 17px;
+    z-index: -1;
+}
+.sqrArrBot{
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+    position: absolute;
+    right: 298px;
+    bottom: 220px;
+    text-align: center;
+}
+.arrBox{
+    color: #FFF;
+    font-size: 25px !important;
+    position: relative;
+    top: 10px;
+}
+.content{
+    margin: 0 100px;
+}
+section{
+ padding: 10px 50px;   
+}
+.MainSection{
+    display: flex;
+    padding-top: 20px;
+}
+.mainsecHead{
+    background: grey;
+    width: 30%;
+    padding: 1rem;
+    height: 100%;
+    position: relative;
+    left: 50px;
+    top: 60px;
+}
+.mainsecHead h1{
+    color: #FFF;
+}
+.mainsecHead p{
+    color: #FFF;
+}
+.MainSectionImg{
+    width: 80%;
+}
+/* ***************************** */
+.sectionservice{
+    margin: 50px 0;
+    text-align: center;
+    font-size: 33px;
+    max-width: 600px;
+    position: relative;
+    font-weight: bold;
+}
+.sectionservice::before{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 5px;
+    background: lightgrey;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+.Benificontent{
+    display: flex;
+	text-align: left;
+	margin-left: 110px;
+	padding-bottom: 5%;
+}
+.BenificontentBlock{
+	display: flex;
+	width: 50%;
+}
+.benifiblock{
+	padding-left: 30px;
+	display: block;
+}
+#qualityIcon1{
+	margin-top: 14px;
+	width:50px;
+	height:50px;
+}
+#shippingIcon2{
+	margin-left:0%;
+	margin-top: 8px;
+	width:50px;
+	height:50px;  
+}
+#warrantyIcon3{
+	margin-left:0%;
+	margin-top: 14px;
+	width:50px;
+	height:50px;
+}
+.p1{
+	font-size: 24px;
+	font-weight: 100px;
+	display: block;
+}
+.qualityContent{
+	font-size: 15px;
+	width: 60%;
+	display: inline-block;
+}
+.shippingContent{
+	font-size: 15px;
+	width: 60%;
+	display: inline-block;
+}
+.warrantyContent{
+	font-size: 15px;
+	width: 70%;
+	display: inline-block;
+}
+/* ************************** */
+.sectionExp{
+    display: flex;
+    justify-content: space-around;
+}
+.imgExp{
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+}
+.ExpDetil{
+    width: 70%;
+    margin: 0 0 0 50px;
+}
+.sectionExpHead{
+    font-weight: bold;
+    font-size: 30px;
+}
+.briefHeading{
+    font-size: 25px;
+    font-weight: bold;
+}
+.processHead{
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.finishHead{
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.divExp{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.numExp{
+    padding: 10px;
+}
+.ExpDetail{
+    color: grey;
+    font-size: xxx-large;
+}
+.btn-learn{
+    padding: 10px;
+    background-color: #fff;
+}
+.btn-arrow{
+    font-size: 30px;
+    margin-left: -5px;
+}
+    
+/* ****************************** */
+.sectionExpSecondry{
+    display: flex;
+    padding-top: 60px;
+    height: 600px;
+}
+.sectionExpContent{
+    width: 60%;
+}
+.divExpe{
+    display: flex;
+}
+.secExpSecDetBtn{
+    position: relative;
+    top: 25px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 10px;
+    background: grey;
+    color: #fff;
+    margin: 0 15px;
+}
+.secExpSecDet{
+    width: 70%;
+}
+.brifDesc{
+    display: flex;
+  }
+.vl{
+    border-left: 3px solid lightgrey;
+    height: auto;
+    margin-left: -37px;
+    margin-right: 35px;
+}
+.imgdet{
+    width: 100%;
+    position: absolute;
+    height: auto;
+    max-width: 300px;
+}
+
+/* ***************************** */
+.sectionReviewTab{
+    padding: 50px 0;
+}
+.sectionCutRev{
+    display: flex;
+}
+
+.sectionReview{
+    background: grey;
+    padding: 30px 50px;
+    margin: 10px;
+}
+.sectionReview h2{
+    color: #FFF;
+}
+.reviewpara{
+    color: #FFF;
+}
+.review_user{
+    display: flex;
+}
+.user1{
+    height: 40px;
+    border-radius: 20px;
+}
+.user2{
+    height: 40px;
+    border-radius: 20px;
+}
+.reviewDot{
+    background: #FFF;
+    border-radius: 15px;
+    padding: 5px 8px;
+}
+.ReviewerDeti{
+    position: static;
+    margin: 10px 10px;
+}
+.name_post{
+    color: #FFF;
+}
+/* *********************************** */
+.SubscriptionHead{
+    text-align: center;
+    font-size: 30px;
+}
+.Subscriptionpara{
+    text-align: center;
+    display: block;
+    padding: 0 15%;
+}
+.search-container{
+    text-align: center;
+    margin: 20px;
+}
+.srchform{
+    border: 1px solid black;
+    margin: 0 30%;
+    padding: 6px;
+    background: #FFF;
+}
+.searchbox{
+    border: none;
+    width: 150px;
+}
+.srchbtn{
+    margin: 0 0 0 100px;
+    padding: 10px;
+    background: gray;
+}
+/* *********************************** */
+footer{
+    position: relative;
+    z-index: -1;
+    margin: 0px auto;
+    padding: 80px 64px;
+    height: 250px;
+    background: grey;
+}
+.footermain{
+    display: block;
+}
+.footerLux{
+    width: 30%;
+    float: left;
+}
+.leftData{
+    padding: 0 50px 0 0;
+}
+.Footleft{
+    display: flex;
+    float: right;
+}
+.footerSM{
+    display: flex;
+}
+.footerIcon{
+    padding: 10px;
+    color: #000;
+}
+/* *********************************** */
+@media only screen 
+and (min-width : 321px) 
+and (max-device-width : 480px) {
+.sqrArrBot{
+    display: none;
+}
+.footermain {
+    display: grid;
+}
+.Footleft {
+    display: grid;
+}
+.content {
+    margin: 0 10px !important;
+}
+.Benificontent {
+    display: grid !important;
+}
+.sectionCutRev {
+    display: grid;
+}
+.srchform {
+    border: 1px solid black;
+    margin: 0px;
+    padding: 6px;
+    background: #FFF;
+}
+.srchbtn {
+    margin: 0;
+    padding: 10px;
+    background: gray;
+}   
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+{
+.sqrArrBot{
+    display: none;
+}
+.sqrTop{
+    display: none;
+}
+.Benificontent {
+    display: flex;
+}   
+.search-container {
+    text-align: center;
+    margin: 0 25%;
+}
+.srchform {
+    border: 1px solid black;
+    margin: 20px 0 0 0;
+    padding: 20px 0;
+    background: #FFF;
+}
+.srchbtn {
+    margin: -10px 15px 0 0;
+    padding: 10px;
+    background: gray;
+    float: right;
+}
+.footermain {
+    display: block;
+}
+}
+
+@media only screen 
+and (min-width : 1224px) {
+.Benificontent {
+    display: flex !important;
+}
+.footermain {
+    display: block !important;
+}
+.Footleft {
+    display: flex !important;
+    float: right;
+}
+.srchform {
+    border: 1px solid black;
+    margin: 0 30% !important;
+    padding: 6px;
+    background: #FFF;
+}
+.srchbtn {
+    margin: 0 0 0 100px !important;
+    padding: 10px;
+    background: gray;
+}
+.search-container {
+    text-align: center;
+    margin: 40px 0 -38px 0px;
+}
+.sectionCutRev {
+    display: flex;
+}
+}
+
+@media only screen 
+and (min-device-width : 481px) 
+and (max-device-width : 769px) {
+section{
+    width: 100%;
+    padding: 10px 10px;
+}
+.Benificontent {
+    display: grid;
+    text-align: left;
+    margin: auto;
+    padding-bottom: 5%;
+}
+.MainSection {
+    display: block;
+    padding-top: 20px;
+}
+.MainSectionImg {
+    width: 100%;
+    max-width: 600px;
+}
+.mainsecHead {
+    background: grey;
+    width: 100%;
+    padding: 1rem;
+    position: initial;
+    margin-bottom: 15px;
+}
+.sqrArrBot{
+    display: none;
+}
+.sectionservice::before {
+    display: none;
+}
+.sectionservice {
+    font-size: 29px;
+}
+.BenificontentBlock {
+    display: flex;
+    width: 100%;
+}
+.qualityContent {
+    width: 100%;
+}
+.shippingContent{
+    width: 100%;
+} 
+.warrantyContent{
+    width: 100%;
+}
+.sectionExp {
+    display: grid;
+    justify-content: space-around;
+}
+.imgExp {
+    height: auto;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+}
+.sectionExpHead {
+    text-align: center;
+    font-size: 30px;
+    max-width: 600px;
+    position: relative;
+    font-weight: bold;
+}
+.btn-learn{
+    text-align: center;
+}
+.sectionExpSecondry {
+    display: grid;
+    padding-top: 60px;
+    height: auto;
+}
+.imgdet {
+    position: unset;
+    height: auto;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+}
+.sectionCutRev {
+    display: grid;
+}
+.srchform {
+    border: 1px solid black;
+    margin: 0 -5%;
+    padding: 0px;
+    background: #FFF;
+}
+.Footleft {
+    display: grid;
+    float: right;
+}
+footer {
+    position: relative;
+    z-index: -1;
+    margin: 0px auto;
+    padding: 80px 64px;
+    height: auto;
+    background: grey;
+}
+.footermain {
+    display: grid;
+}
+}

@@ -1,11 +1,20 @@
-
+*{
+    box-sizing: border-box;
+    margin: 0%; 
+    padding: 0%;
+    
+}
 .container{
     max-width: 1350px;
+    margin: auto;
+}
+body{
+    margin: 0%;
 }
 Header{
     position: relative;
     display: block;
-    padding: 10px;
+    padding: 42px;
 }
 .navbar{
     display: flex;
@@ -20,34 +29,35 @@ Header{
 .logo a{
     text-decoration:none;
     color: #000;
-
 }
-.Headcenter{
-    position: relative;
+.headcenter{
+    display: flex;
     text-align: center;
-    top: 10px;
+    gap: 75px;
+
 }
 .centerLog{
     padding: 0 10px;
     text-decoration: none;
     color: #000;
+    font-size: 20px;
 }
 .navLeft{
     color: #000;
 }
-.Headleft{
+.headleft{
     display: flex;
     gap: 30px;
     
-}
-/* ******************** */
+} 
+/* *********************************** */
 .sqrTop{
     width:60px; 
     height:60px; 
     border:1px solid grey;
     position: relative;
     bottom: 50px;
-    right: 17px;
+    left: 240px;
     z-index: -1;
 }
 .sqrArrBot{
@@ -55,8 +65,8 @@ Header{
     width: 50px;
     background-color: #555;
     position: absolute;
-    right: 298px;
-    bottom: 220px;
+    right: 75px;
+    bottom: 115px;
     text-align: center;
 }
 .arrBox{
@@ -68,21 +78,21 @@ Header{
 .content{
     margin: 0 100px;
 }
-section{
- padding: 10px 50px;   
-}
-.MainSection{
-    display: flex;
+.mainSection{
     padding-top: 20px;
 }
 .mainsecHead{
+    height: 30%;
     background: grey;
-    width: 30%;
-    padding: 1rem;
-    height: 100%;
-    position: relative;
-    left: 50px;
-    top: 60px;
+    width: 35%;
+    padding: 3rem;
+    position: absolute;
+    left: 0;
+    top: 20%;
+}
+.MainimgDiv {
+    display: flex;
+    margin-left: 250px;
 }
 .mainsecHead h1{
     color: #FFF;
@@ -90,8 +100,9 @@ section{
 .mainsecHead p{
     color: #FFF;
 }
-.MainSectionImg{
-    width: 80%;
+.mainSectionImg{
+    width: 100%;
+    height: 500px;
 }
 /* ***************************** */
 .sectionservice{
@@ -118,7 +129,7 @@ section{
 	margin-left: 110px;
 	padding-bottom: 5%;
 }
-.BenificontentBlock{
+.benificontentBlock{
 	display: flex;
 	width: 50%;
 }
@@ -144,56 +155,59 @@ section{
 	height:50px;
 }
 .p1{
-	font-size: 24px;
-	font-weight: 100px;
+	font-size: 50px;
+	font-weight: bold;
 	display: block;
 }
 .qualityContent{
-	font-size: 15px;
+	font-size: 20px;
 	width: 60%;
 	display: inline-block;
 }
 .shippingContent{
-	font-size: 15px;
+	font-size: 20px;
 	width: 60%;
 	display: inline-block;
 }
 .warrantyContent{
-	font-size: 15px;
+	font-size: 20px;
 	width: 70%;
 	display: inline-block;
 }
 /* ************************** */
 .sectionExp{
     display: flex;
-    justify-content: space-around;
+    padding: 50px;
+}
+.img_sec{
+    width: 100%;
+    padding: 20px;
+    margin: 0px;
 }
 .imgExp{
     width: 100%;
-    height: auto;
-    max-width: 250px;
+    height: 100%;
 }
 .ExpDetil{
-    width: 70%;
-    margin: 0 0 0 50px;
+    width: 100%;
+    margin: 0 0 0 143px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
 }
 .sectionExpHead{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 50px;
 }
-.briefHeading{
-    font-size: 25px;
-    font-weight: bold;
+.secexppara{
+    font-size: 125%;
+    font-weight: 500;
+    padding-top: 0px;
 }
-.processHead{
-    font-size: 25px;
-    font-weight: bold;
-    
-}
-.finishHead{
-    font-size: 25px;
-    font-weight: bold;
-    
+.secexpparanum{
+    font-size: 125%;
+    font-weight: 500;
 }
 .divExp{
     display: flex;
@@ -201,11 +215,13 @@ section{
     justify-content: flex-start;
 }
 .numExp{
-    padding: 10px;
+    padding: 38px;
+    padding-bottom: 0px;
 }
 .ExpDetail{
     color: grey;
-    font-size: xxx-large;
+    font-size: 75px;
+    font-weight: bold;
 }
 .btn-learn{
     padding: 10px;
@@ -217,20 +233,34 @@ section{
 }
     
 /* ****************************** */
-.sectionExpSecondry{
+ .sectionExpSecondry{
     display: flex;
-    padding-top: 60px;
-    height: 600px;
-}
+    padding: 91px 64px;
+} 
 .sectionExpContent{
-    width: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .divExpe{
     display: flex;
 }
+.briefHeading{
+    font-size: 28px;
+    font-weight: bold;
+}
+.processHead{
+    font-size: 28px;
+    font-weight: bold;
+}
+.finishHead{
+    font-size: 28px;
+    font-weight: bold;
+}
 .secExpSecDetBtn{
     position: relative;
-    top: 25px;
+    top: 10px;
     border: 1px solid grey;
     border-radius: 20px;
     padding: 10px;
@@ -244,6 +274,9 @@ section{
 .brifDesc{
     display: flex;
   }
+.brifDesc p{
+    font-size: 20px;
+}
 .vl{
     border-left: 3px solid lightgrey;
     height: auto;
@@ -252,17 +285,21 @@ section{
 }
 .imgdet{
     width: 100%;
-    position: absolute;
-    height: auto;
-    max-width: 300px;
+    height: 100%;
 }
-
-/* ***************************** */
+.prosimg{
+    width: 100%;
+}
+/* ************************ */
 .sectionReviewTab{
-    padding: 50px 0;
+    padding: 50px 50px;
+}
+.revhead{
+    display: flex;
 }
 .sectionCutRev{
     display: flex;
+    padding: 50px 0px;
 }
 
 .sectionReview{
@@ -270,11 +307,13 @@ section{
     padding: 30px 50px;
     margin: 10px;
 }
-.sectionReview h2{
+.reviewhead{
     color: #FFF;
+    font-size: 30px;
 }
 .reviewpara{
     color: #FFF;
+    font-size: 20px;
 }
 .review_user{
     display: flex;
@@ -300,14 +339,19 @@ section{
     color: #FFF;
 }
 /* *********************************** */
+.subcrb{
+    padding: 35px 0px;
+}
 .SubscriptionHead{
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
+    font-weight: bold;
 }
 .Subscriptionpara{
     text-align: center;
     display: block;
     padding: 0 15%;
+    font-size: 25px;
 }
 .search-container{
     text-align: center;
@@ -321,7 +365,8 @@ section{
 }
 .searchbox{
     border: none;
-    width: 150px;
+    float: left;
+    padding: 10px;
 }
 .srchbtn{
     margin: 0 0 0 100px;
@@ -339,13 +384,17 @@ footer{
 }
 .footermain{
     display: block;
+    padding: 20px 0px;
+
 }
 .footerLux{
+    color: white;
     width: 30%;
     float: left;
 }
 .leftData{
     padding: 0 50px 0 0;
+    color: white;
 }
 .Footleft{
     display: flex;
@@ -356,8 +405,17 @@ footer{
 }
 .footerIcon{
     padding: 10px;
-    color: #000;
+    color:white;
 }
+.fotcol{
+    list-style-type: none;
+
+}
+.footlink{
+    text-decoration: none;
+    color: white;
+}
+/* *********************************** */
 /* *********************************** */
 @media only screen 
 and (min-width : 321px) 
@@ -387,10 +445,104 @@ and (max-device-width : 480px) {
     background: #FFF;
 }
 .srchbtn {
-    margin: 0;
+    margin: 0 0 0 40%;
     padding: 10px;
     background: gray;
 }   
+.mainsecHead {
+    height: auto;
+    background: grey;
+    width: 100%;
+    padding: 3rem;
+    position: inherit;
+    left: 0;
+    top: 20%;
+}
+.MainimgDiv {
+    display: flex;
+    margin-left:0px;
+}
+footer {
+    position: relative;
+    z-index: -1;
+    margin: 0px auto;
+    padding: 80px 64px;
+    height: auto;
+    background: grey;
+}
+.footerLux {
+    color: white;
+    width: 100%;
+    float: left;
+    font-size: 25px;
+}
+.leftData {
+    padding: 0 50px 0 0;
+    color: white;
+    font-size: 61px;
+    font-weight: bolder;
+}
+.search-container {
+    text-align: center;
+    margin: 0 25%;
+    width: 50%;
+}
+.secexppara{
+    text-align: center;
+}
+.sectionExp{
+    display: block;
+}
+.imgExp {
+    width: 100%;
+    height: auto;
+}
+.sectionExpHead{
+    text-align: center;
+}
+.sectionReviewTab{
+    text-align: center;
+}
+.ExpDetil {
+    width: 100%;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+.divExp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sectionExpSecondry{
+    display: block;
+}
+.imgdet {
+    width: 100%;
+    height: 700px;
+    margin-top: 50px;
+}
+.briefHeading {
+    font-size: 45px;
+    font-weight: bold;
+}
+.processHead{
+    font-size: 45px;
+    font-weight: bold;
+}
+.finishHead{
+    font-size: 45px;
+    font-weight: bold;
+}
+.secExpSecDet {
+    width: 70%;
+    margin-bottom: 10px;
+}
+.sqrTop{
+    display: none;
+}
 }
 
 @media only screen 
@@ -398,6 +550,35 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 {
 .sqrArrBot{
+    display: none;
+}
+.mainsecHead {
+    height: 55%;
+    background: grey;
+    width: 35%;
+    padding: 3rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.Benificontent {
+    display: flex;
+    padding-bottom: 5%;
+}
+.searchbox {
+    border: none;
+    float: left;
+    padding: 10px;
+    top: 10ox;
+    position: relative;
+    top: -18px;
+}
+.p1 {
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+}
+.sqrTop{
     display: none;
 }
 .sqrTop{
@@ -417,13 +598,22 @@ and (max-device-width : 1024px)
     background: #FFF;
 }
 .srchbtn {
-    margin: -10px 15px 0 0;
+    margin: -20px 15px 0 0;
     padding: 10px;
     background: gray;
     float: right;
 }
+
 .footermain {
     display: block;
+}
+.ExpDetil{
+    margin: 0;
+}
+.divExp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 }
 
@@ -440,19 +630,21 @@ and (min-width : 1224px) {
     float: right;
 }
 .srchform {
-    border: 1px solid black;
     margin: 0 30% !important;
     padding: 6px;
     background: #FFF;
+    border: none;
 }
 .srchbtn {
     margin: 0 0 0 100px !important;
-    padding: 10px;
+    padding: 10px 25px;
     background: gray;
+    border: none;
+
 }
 .search-container {
     text-align: center;
-    margin: 40px 0 -38px 0px;
+    margin: 40px 0 -60px 0px;
 }
 .sectionCutRev {
     display: flex;
@@ -469,14 +661,23 @@ section{
 .Benificontent {
     display: grid;
     text-align: left;
-    margin: auto;
+    /* margin: auto; */
     padding-bottom: 5%;
 }
-.MainSection {
+.ExpDetil{
+    margin: 0;
+    text-align: center;
+}
+.divExp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.mainSection {
     display: block;
     padding-top: 20px;
 }
-.MainSectionImg {
+.mainSectionImg {
     width: 100%;
     max-width: 600px;
 }
@@ -496,7 +697,7 @@ section{
 .sectionservice {
     font-size: 29px;
 }
-.BenificontentBlock {
+.benificontentBlock {
     display: flex;
     width: 100%;
 }
@@ -525,9 +726,28 @@ section{
 .sectionExpHead {
     text-align: center;
     font-size: 30px;
-    max-width: 600px;
     position: relative;
     font-weight: bold;
+}
+.revhead {
+    margin: 0 36%;
+}
+.p1 {
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+}
+.mainsecHead{
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+}
+.mainsecHead p {
+    color: #FFF;
+    font-size: 20px;
+}
+.sectionReviewTab{
+    text-align: center;
 }
 .btn-learn{
     text-align: center;
@@ -551,7 +771,7 @@ section{
 }
 .srchform {
     border: 1px solid black;
-    margin: 0 -5%;
+    margin: 0 25%;
     padding: 0px;
     background: #FFF;
 }

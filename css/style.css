@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0%; 
     padding: 0%;
-    
+    font-family: 'Poppins', sans-serif;
 }
 .container{
     max-width: 1350px;
@@ -11,7 +11,7 @@
 body{
     margin: 0%;
 }
-Header{
+header{
     position: relative;
     display: block;
     padding: 42px;
@@ -34,7 +34,6 @@ Header{
     display: flex;
     text-align: center;
     gap: 75px;
-
 }
 .centerLog{
     padding: 0 10px;
@@ -48,92 +47,98 @@ Header{
 .headleft{
     display: flex;
     gap: 30px;
-    
 } 
 /* *********************************** */
-.sqrTop{
-    width:60px; 
-    height:60px; 
-    border:1px solid grey;
+.square_box{
+    width: 92px;
+    height:77px; 
+    border:3px solid grey;
     position: relative;
-    bottom: 50px;
-    left: 240px;
+    bottom: 60px;
+    left: 339px;
     z-index: -1;
 }
-.sqrArrBot{
-    height: 50px;
-    width: 50px;
+.square_arrow_box{
+    height: 77px;
+    width: 92px;
     background-color: #555;
     position: absolute;
-    right: 75px;
-    bottom: 115px;
+    right: 50px;
+    bottom: 60px;
     text-align: center;
 }
 .arrBox{
     color: #FFF;
     font-size: 25px !important;
     position: relative;
-    top: 10px;
+    top: 30px;
 }
-.content{
-    margin: 0 100px;
+.main_section{
+    padding-top: 15px;
+    position: relative;
 }
-.mainSection{
-    padding-top: 20px;
-}
-.mainsecHead{
-    height: 30%;
-    background: grey;
-    width: 35%;
-    padding: 3rem;
+.demo{
     position: absolute;
-    left: 0;
-    top: 20%;
+    top: 19%;
+    left: -50%;
+    max-width: 100%;
+    background-color: grey;
+    padding: 3% 15% 3% 55%;
 }
-.MainimgDiv {
+.main_section_text{
+    max-width: 300px;
+    color: white;
+}
+.h1class{
+color: #fff;
+font-size: 35px;
+font-weight: bold;
+}
+.pclass{
+font-size: 15px;
+color: #fff;
+}
+.main_image_div {
     display: flex;
-    margin-left: 250px;
+    margin-left: 27%;
 }
-.mainsecHead h1{
-    color: #FFF;
+.main_section_image{
+    width: 93%;
+    height: 20%;
 }
-.mainsecHead p{
-    color: #FFF;
-}
-.mainSectionImg{
-    width: 100%;
-    height: 500px;
-}
-/* ***************************** */
-.sectionservice{
+/* *********************************** */
+.section_service{
     margin: 50px 0;
-    text-align: center;
-    font-size: 33px;
-    max-width: 600px;
+    text-align: left;
+    font-size: 40px;
+    max-width: 500px;
     position: relative;
     font-weight: bold;
 }
-.sectionservice::before{
+.section_service::before{
     content: "";
     display: block;
     width: 130px;
     height: 5px;
     background: lightgrey;
-    left: 0;
+    left: -137px;
     top: 50%;
     position: absolute;
 }
-.Benificontent{
+.benifit_heading {
+    margin: 0px 0px 0px 225px;
+}
+.benifit_content{
     display: flex;
 	text-align: left;
 	margin-left: 110px;
 	padding-bottom: 5%;
 }
-.benificontentBlock{
+.benifit_content_block{
 	display: flex;
-	width: 50%;
+	width: 100%;
 }
-.benifiblock{
+.benifit_block{
 	padding-left: 30px;
 	display: block;
 }
@@ -154,41 +159,42 @@ Header{
 	width:50px;
 	height:50px;
 }
-.p1{
-	font-size: 50px;
+.benifit_head{
+	font-size: 31px;
 	font-weight: bold;
 	display: block;
 }
-.qualityContent{
-	font-size: 20px;
-	width: 60%;
+.quality_content {
+    font-size: 18px;
+    width: 71%;
+    display: inline-block;
+}
+.shipping_content{
+	font-size: 18px;
+	width: 71%;
 	display: inline-block;
 }
-.shippingContent{
-	font-size: 20px;
-	width: 60%;
-	display: inline-block;
-}
-.warrantyContent{
-	font-size: 20px;
+.warranty_content{
+	font-size: 18px;
 	width: 70%;
 	display: inline-block;
 }
 /* ************************** */
-.sectionExp{
+.section_experience {
     display: flex;
-    padding: 50px;
+    padding: 35px 50px 0px 50px;
+    line-height: normal;
 }
-.img_sec{
+    .experience_imagediv{
     width: 100%;
     padding: 20px;
     margin: 0px;
 }
-.imgExp{
+.experience_image{
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
-.ExpDetil{
+.experience_content{
     width: 100%;
     margin: 0 0 0 143px;
     display: flex;
@@ -196,61 +202,72 @@ Header{
     justify-content: space-between;
     padding: 15px;
 }
-.sectionExpHead{
+.experience_section_head{
     font-weight: bold;
     font-size: 50px;
 }
-.secexppara{
+.process_section_head{
+    font-weight: bold;
+    font-size: 50px;
+}
+.review_section_head{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.experience_text{
     font-size: 125%;
     font-weight: 500;
     padding-top: 0px;
+    line-height: normal;
 }
-.secexpparanum{
+.number_title{
     font-size: 125%;
     font-weight: 500;
 }
-.divExp{
+.experience_number{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
-.numExp{
-    padding: 38px;
+.number_content{
+    padding: 38px 38px 38px 8px;
     padding-bottom: 0px;
 }
-.ExpDetail{
+.number{
     color: grey;
     font-size: 75px;
     font-weight: bold;
 }
-.btn-learn{
+.experience_button{
     padding: 10px;
+    margin-bottom: 30px;
     background-color: #fff;
 }
-.btn-arrow{
+.button_arrow{
     font-size: 30px;
     margin-left: -5px;
 }
-    
 /* ****************************** */
- .sectionExpSecondry{
+.process_section {
     display: flex;
-    padding: 91px 64px;
-} 
-.sectionExpContent{
+    padding: 91px 64px 35px 64px;
+}
+.process_content {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-bottom: 71px;
 }
-.divExpe{
+.process_step{
     display: flex;
 }
-.briefHeading{
+.brief_heading{
     font-size: 28px;
     font-weight: bold;
 }
-.processHead{
+.processing_head{
     font-size: 28px;
     font-weight: bold;
 }
@@ -258,7 +275,7 @@ Header{
     font-size: 28px;
     font-weight: bold;
 }
-.secExpSecDetBtn{
+.process_number{
     position: relative;
     top: 10px;
     border: 1px solid grey;
@@ -268,13 +285,13 @@ Header{
     color: #fff;
     margin: 0 15px;
 }
-.secExpSecDet{
+.step_section{
     width: 70%;
 }
-.brifDesc{
+.process_text{
     display: flex;
   }
-.brifDesc p{
+.process_text p{
     font-size: 20px;
 }
 .vl{
@@ -283,35 +300,37 @@ Header{
     margin-left: -37px;
     margin-right: 35px;
 }
-.imgdet{
+.process_image{
     width: 100%;
-    height: 100%;
+    height: 90%;
+    padding-left: 30px;
 }
-.prosimg{
+.process_imagediv{
     width: 100%;
 }
-/* ************************ */
-.sectionReviewTab{
-    padding: 50px 50px;
+/* **************************************************** */
+.review_section{
+    padding: 35px 50px;
 }
-.revhead{
+.review_head{
     display: flex;
 }
-.sectionCutRev{
+.user_content{
     display: flex;
     padding: 50px 0px;
 }
 
-.sectionReview{
+.review_box{
     background: grey;
     padding: 30px 50px;
     margin: 10px;
+    display: grid;
 }
-.reviewhead{
+.review_heading{
     color: #FFF;
     font-size: 30px;
 }
-.reviewpara{
+.review_para{
     color: #FFF;
     font-size: 20px;
 }
@@ -331,23 +350,23 @@ Header{
     border-radius: 15px;
     padding: 5px 8px;
 }
-.ReviewerDeti{
+.user_data{
     position: static;
-    margin: 10px 10px;
+    margin: 0px 10px;
 }
 .name_post{
     color: #FFF;
 }
-/* *********************************** */
-.subcrb{
+/* ********************************************* */
+.subcribe_section{
     padding: 35px 0px;
 }
-.SubscriptionHead{
+.subscribe_head{
     text-align: center;
     font-size: 50px;
     font-weight: bold;
 }
-.Subscriptionpara{
+.subscribe_para{
     text-align: center;
     display: block;
     padding: 0 15%;
@@ -357,99 +376,102 @@ Header{
     text-align: center;
     margin: 20px;
 }
-.srchform{
-    border: 1px solid black;
+.search_form{
+    /* border: 1px solid black; */
     margin: 0 30%;
     padding: 6px;
     background: #FFF;
+    border: none;
+    box-shadow: 0 0 5px black;
 }
 .searchbox{
     border: none;
     float: left;
     padding: 10px;
 }
-.srchbtn{
-    margin: 0 0 0 100px;
+.search_button{
+    margin: 0 0 0 180px;
     padding: 10px;
     background: gray;
 }
 /* *********************************** */
-footer{
+.footer{
     position: relative;
     z-index: -1;
     margin: 0px auto;
-    padding: 80px 64px;
-    height: 250px;
+    padding: 20px;
+    height: 100%;
+    max-height: 400px;
     background: grey;
 }
-.footermain{
+.footer_section{
     display: block;
     padding: 20px 0px;
-
 }
-.footerLux{
+.footer_luxterior{
     color: white;
     width: 30%;
     float: left;
 }
-.leftData{
-    padding: 0 50px 0 0;
+.footer_heads{
+    padding: 0 50px 38px 0;
     color: white;
 }
 .Footleft{
     display: flex;
     float: right;
 }
-.footerSM{
+.footer_icons{
     display: flex;
 }
 .footerIcon{
     padding: 10px;
     color:white;
 }
-.fotcol{
+.footerlink_section{
     list-style-type: none;
+    line-height: 27px;
 
 }
 .footlink{
     text-decoration: none;
     color: white;
 }
+.fotpara{
+    line-height: 23px;
+}
 /* *********************************** */
 /* *********************************** */
 @media only screen 
 and (min-width : 321px) 
 and (max-device-width : 480px) {
-.sqrArrBot{
+.square_arrow_box{
     display: none;
 }
-.footermain {
+.footer_section {
     display: grid;
 }
 .Footleft {
     display: grid;
 }
-.content {
-    margin: 0 10px !important;
-}
-.Benificontent {
+.benifit_content {
     display: grid !important;
 }
-.sectionCutRev {
+.user_content {
     display: grid;
 }
-.srchform {
-    border: 1px solid black;
+.search_form {
     margin: 0px;
     padding: 6px;
     background: #FFF;
+    margin: 14px 0px -65px 0px;
 }
-.srchbtn {
+.search_button {
     margin: 0 0 0 40%;
     padding: 10px;
     background: gray;
 }   
-.mainsecHead {
+.main_section_text {
     height: auto;
     background: grey;
     width: 100%;
@@ -457,53 +479,86 @@ and (max-device-width : 480px) {
     position: inherit;
     left: 0;
     top: 20%;
+    max-width: 100%;
 }
-.MainimgDiv {
+
+.main_image_div {
     display: flex;
     margin-left:0px;
 }
-footer {
+.footer {
     position: relative;
     z-index: -1;
     margin: 0px auto;
     padding: 80px 64px;
-    height: auto;
+    height: 1080px;
+    max-height: 1100px;
     background: grey;
 }
-.footerLux {
+.footer_luxterior {
     color: white;
     width: 100%;
     float: left;
     font-size: 25px;
 }
-.leftData {
+.footer_heads {
     padding: 0 50px 0 0;
     color: white;
     font-size: 61px;
     font-weight: bolder;
 }
+
 .search-container {
     text-align: center;
     margin: 0 25%;
     width: 50%;
 }
-.secexppara{
+.experience_text{
     text-align: center;
+    font-size: 27px;
+    text-align: left;
 }
-.sectionExp{
+.section_experience{
     display: block;
 }
-.imgExp {
+.experience_image {
     width: 100%;
     height: auto;
 }
-.sectionExpHead{
+.experience_section_head{
+    text-align: left;
+    font-size: 75px;
+}
+.process_section_head{
+    text-align: left;
+    font-size: 75px;
+}
+.review_section_head{
+    text-align: left;
+    font-size: 75px;
+}
+.benifit_head{
+    font-size: 43px;
+}
+.quality_content{
+    font-size: 30px;
+    width: 80%;
+}
+.shipping_content {
+    font-size: 30px;
+    width: 80%;
+}
+.warranty_content {
+    font-size: 30px;
+    width: 80%;
+}
+.footer_icons {
+    font-size: 35px;
+}
+.review_section{
     text-align: center;
 }
-.sectionReviewTab{
-    text-align: center;
-}
-.ExpDetil {
+.experience_content {
     width: 100%;
     margin: 0 !important;
     display: flex;
@@ -511,24 +566,25 @@ footer {
     justify-content: space-between;
     padding: 15px;
 }
-.divExp{
+.experience_number{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-size: 34px;
 }
-.sectionExpSecondry{
+.process_section{
     display: block;
 }
-.imgdet {
+.process_image {
     width: 100%;
     height: 700px;
     margin-top: 50px;
 }
-.briefHeading {
+.brief_heading {
     font-size: 45px;
     font-weight: bold;
 }
-.processHead{
+.processing_head{
     font-size: 45px;
     font-weight: bold;
 }
@@ -536,23 +592,70 @@ footer {
     font-size: 45px;
     font-weight: bold;
 }
-.secExpSecDet {
+.step_section {
     width: 70%;
     margin-bottom: 10px;
 }
-.sqrTop{
+.square_box{
+    display: none;
+}
+.review_heading {
+    color: #FFF;
+    font-size: 30px;
+    text-align: left;
+}
+.review_para {
+    text-align: left;
+}
+.user_data {
+    text-align: left;
+}
+.experience_button {
+    padding: 15px;
+    margin-bottom: -39px;
+    background-color: #fff;
+    margin-left: 113px;
+    font-size: 47px;
+}
+.name_post {
+    font-size: 29px;
+    color: #FFF;
+}
+.user2 {
+    height: 80px;
+    border-radius: 68px;
+}
+.user1 {
+    height: 80px;
+    border-radius: 68px;
+}
+.main_section{
+    display: contents;
+}
+.demo {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+.main_section_image {
+    width: 100%;
+    height: 20%;
+}
+.square_box{
     display: none;
 }
 }
 
+/* *********************************** */
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 {
-.sqrArrBot{
+.square_arrow_box{
     display: none;
 }
-.mainsecHead {
+.main_section_text {
     height: 55%;
     background: grey;
     width: 35%;
@@ -561,7 +664,7 @@ and (max-device-width : 1024px)
     left: 0;
     top: 50%;
 }
-.Benificontent {
+.benifit_content {
     display: flex;
     padding-bottom: 5%;
 }
@@ -573,70 +676,127 @@ and (max-device-width : 1024px)
     position: relative;
     top: -18px;
 }
-.p1 {
+.benifit_head {
     font-size: 25px;
     font-weight: bold;
     display: block;
 }
-.sqrTop{
+.square_box{
     display: none;
 }
-.sqrTop{
+.square_box{
     display: none;
 }
-.Benificontent {
+.benifit_content {
     display: flex;
 }   
 .search-container {
     text-align: center;
-    margin: 0 25%;
+    margin: 0 20%;
 }
-.srchform {
-    border: 1px solid black;
+.search_form {
     margin: 20px 0 0 0;
-    padding: 20px 0;
+    padding: 22px 0;
     background: #FFF;
+    margin: 14px 0px -100px 0px;
 }
-.srchbtn {
+.search_button {
     margin: -20px 15px 0 0;
     padding: 10px;
     background: gray;
     float: right;
 }
-
-.footermain {
-    display: block;
+.subcribe_section {
+    padding: 82px 0px;
 }
-.ExpDetil{
+.footer_section {
+    display: flex;
+    height: 100%;
+}
+.experience_content{
     margin: 0;
 }
-.divExp {
+.experience_number {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+.demo {
+    position: absolute;
+    top: 10%;
+    left: -50%;
+    max-width: 100%;
+    background-color: grey;
+    padding: 3% 3% 3% 55%;
 }
-
+.main_section_text {
+    background: grey;
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+    margin-bottom: 15px;
+    max-width: 100%;
+    height: auto;
+    top: 0;
+    text-align: center;
+}
+.main_image_div {
+    display: flex;
+    margin-left: 27%;
+}
+.main_section_image{
+    width: 100%;
+}
+.footer{
+    height: 100%;
+    padding: 20px;
+}
+.square_box{
+    display: none;
+}
+.Footleft {
+    display: block;
+    float: right;
+    position: absolute;
+    margin-top: 181px;
+}
+.footer_luxterior {
+    position: absolute;
+}
+.footer_section {
+    display: grid;
+}
+.footer {
+    position: relative;
+    z-index: -1;
+    margin: 0px auto;
+    padding: 80px 64px;
+    height: 1080px;
+    max-height: 1100px;
+    background: grey;
+}
+}
+/* *********************************** */
 @media only screen 
 and (min-width : 1224px) {
-.Benificontent {
+.benifit_content {
     display: flex !important;
 }
-.footermain {
+.footer_section {
     display: block !important;
 }
 .Footleft {
     display: flex !important;
     float: right;
 }
-.srchform {
+.search_form {
     margin: 0 30% !important;
     padding: 6px;
     background: #FFF;
     border: none;
+    
 }
-.srchbtn {
-    margin: 0 0 0 100px !important;
+.search_button {
     padding: 10px 25px;
     background: gray;
     border: none;
@@ -646,11 +806,14 @@ and (min-width : 1224px) {
     text-align: center;
     margin: 40px 0 -60px 0px;
 }
-.sectionCutRev {
+.user_content {
     display: flex;
 }
+.search_form{
+    margin: 14px 25% -65px 25%;
 }
-
+}
+/* *********************************** */
 @media only screen 
 and (min-device-width : 481px) 
 and (max-device-width : 769px) {
@@ -658,136 +821,149 @@ section{
     width: 100%;
     padding: 10px 10px;
 }
-.Benificontent {
-    display: grid;
+.benifit_content {
+    display: flex;
+    flex-direction: row;
     text-align: left;
-    /* margin: auto; */
     padding-bottom: 5%;
 }
-.ExpDetil{
+.experience_content{
     margin: 0;
     text-align: center;
 }
-.divExp {
+.experience_number {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.mainSection {
+.main_section {
     display: block;
     padding-top: 20px;
 }
-.mainSectionImg {
+.main_section_image {
     width: 100%;
-    max-width: 600px;
+    max-width: 100%;
 }
-.mainsecHead {
+.main_section_text {
     background: grey;
     width: 100%;
     padding: 1rem;
     position: initial;
     margin-bottom: 15px;
 }
-.sqrArrBot{
+.square_arrow_box{
     display: none;
 }
-.sectionservice::before {
+.section_service::before {
     display: none;
 }
-.sectionservice {
+.section_service {
     font-size: 29px;
+    max-width: 340px;
 }
-.benificontentBlock {
+.benifit_content_block {
     display: flex;
     width: 100%;
 }
-.qualityContent {
+.quality_content {
     width: 100%;
 }
-.shippingContent{
+.shipping_content{
     width: 100%;
 } 
-.warrantyContent{
+.warranty_content{
     width: 100%;
 }
-.sectionExp {
-    display: grid;
+.section_experience {
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
-.imgExp {
-    height: auto;
-    max-width: 250px;
-    margin: 0 auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    display: block;
+.experience_image {
+    width: 100%;
 }
-.sectionExpHead {
+.experience_section_head {
     text-align: center;
     font-size: 30px;
     position: relative;
     font-weight: bold;
 }
-.revhead {
-    margin: 0 36%;
+.process_section_head {
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    font-weight: bold;
 }
-.p1 {
+.review_section_head {
+    text-align: left;
+    font-size: 39px;
+    position: relative;
+    font-weight: bold;
+}
+.benifit_head {
     font-size: 25px;
     font-weight: bold;
     display: block;
 }
-.mainsecHead{
+.main_section_text{
     margin: 0 auto;
-    width: 75%;
+    width: 100%;
     text-align: center;
 }
-.mainsecHead p {
+.main_section_text p {
     color: #FFF;
     font-size: 20px;
 }
-.sectionReviewTab{
+.review_section{
+    text-align: left;
+    padding: 0px 20px 0px 20px;
+}
+.experience_button{
     text-align: center;
 }
-.btn-learn{
-    text-align: center;
-}
-.sectionExpSecondry {
-    display: grid;
+.process_section {
+    display: flex;
     padding-top: 60px;
     height: auto;
 }
-.imgdet {
-    position: unset;
-    height: auto;
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    display: block;
+.process_image {
+    width: 100%;
 }
-.sectionCutRev {
-    display: grid;
+.user_content {
+    display: flex;
 }
-.srchform {
-    border: 1px solid black;
-    margin: 0 25%;
-    padding: 0px;
-    background: #FFF;
+.search_form {
+     margin: 15px 25% -110px 25%; 
 }
 .Footleft {
     display: grid;
     float: right;
 }
-footer {
+.footer {
     position: relative;
     z-index: -1;
     margin: 0px auto;
     padding: 80px 64px;
-    height: auto;
+    height: 1080px;
+    max-height: 1100px;
     background: grey;
 }
-.footermain {
-    display: grid;
+.footer_section {
+    display: flex;
+    flex-direction: row;
+}
+.main_image_div {
+    display: flex;
+}
+.demo {
+    padding: 3% 5% 3% 55%;; 
+}
+.main_section_text {
+    max-width: 100%;
+    color: white;
+}
+.square_box{
+    display: none;
 }
 }
+/* *********************************** */

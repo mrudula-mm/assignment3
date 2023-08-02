@@ -18,7 +18,7 @@ header{
 .navbar{
     max-width: 1350px;
     margin: 0 auto;
-    padding: 60px 0px;
+    padding: 60px 55px 60px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,8 +65,8 @@ header{
     width: 115px;
     background-color: #555;
     position: absolute;
-    right: -24px;
-    bottom: 60px;
+    right: 36px;
+    bottom: 71px;
     text-align: center;
 }
 .square_arrow_box i{
@@ -106,8 +106,8 @@ header{
     margin-left: 11%;
 }
 .main_section_image{
-    width: 100%;
-    height: 700px;
+    width: 95%;
+    height: 692px;
 }
 /* *********************************** */
 .section_service{
@@ -144,18 +144,18 @@ header{
 	padding-left: 30px;
 	display: block;
 }
-#Icon1 {
+.icon1 {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-#Icon2 {
+.icon2 {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-#Icon3 {
+.icon3 {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -195,7 +195,7 @@ header{
 }
 .experience_image{
     width: 100%;
-    height: 90%;
+    height: 100%;
 }
 .experience_content {
     margin: 0 0 0 100px;
@@ -679,7 +679,10 @@ and (min-device-width : 481px)
 and (max-device-width : 769px) {
 .container{
     margin: 0 16px;
-}    
+}  
+.navbar {
+    padding: 60px 55px 60px 64px;
+}  
 .main_section_text{
     margin: 0 auto;
     width: 100%;
@@ -692,28 +695,34 @@ and (max-device-width : 769px) {
 .main_section_text {
     background: grey;
     width: 100%;
-    padding: 1rem;
     position: initial;
     margin-bottom: 15px;
+    text-align: left;
 }
-
+.h1class {
+    font-size: 29px;
+}
 .main_section_text p {
     color: #FFF;
-    font-size: 20px;
+    font-size: 18px;
 }
 .main_section {
     display: block;
     padding-top: 20px;
 }
 .main_section_image {
-    width: 100%;
-    max-width: 100%;
+    width: 95%;
+    height: 500px;
 }
 .main_image_div {
     display: flex;
+    margin-left: 17%;
 }
 .demo {
     padding: 3% 5% 3% 55%;; 
+}
+.square_arrow_box {
+    right: 18px;
 }
 .square_box {
     width: 115px;
@@ -842,14 +851,18 @@ and (max-device-width : 1024px)
 {
 .container{
     margin: 0px 16px;
+    /* background-color: red; */
+}
+.navbar{
+    padding: 60px 82px 60px 54px;
 }
 .main_image_div {
     display: flex;
-    margin-left: 23%;
+    margin-left: 15%;
 }
 .main_section_image {
-    width: 650px;
-    height: 410px;
+    width: 736px;
+    height: 451px;
 }
 .square_arrow_box {
     height: 93px;
@@ -866,7 +879,7 @@ and (max-device-width : 1024px)
     border: 3px solid grey;
     position: relative;
     bottom: 69px;
-    left: 193px;
+    left: 118px;
     z-index: -1;
 }
 .main_section {
@@ -875,20 +888,20 @@ and (max-device-width : 1024px)
 }
 .demo {
     position: absolute;
-    top: 19%;
+    top: 17%;
     left: -51%;
     max-width: 90%;
     background-color: grey;
-    padding: 4% 5% 5% 50%;
+    padding: 4% 4% 4% 55%;
 }
 .h1class {
     color: #fff;
-    font-size: 29px;
+    font-size: 27px;
     font-weight: bold;
 }
 
 .pclass {
-    font-size: 13px;
+    font-size: 17px;
     color: #fff;
 }
 .benifit_content {
@@ -950,12 +963,18 @@ and (max-device-width : 1024px)
     top: 78px;
 }
 .searchbox {
-    width: 273px;
+    width: 262px;
 }
 }
 /* *********************************** */
 @media only screen 
 and (min-width : 1224px) {
+.navbar {
+    padding: 60px 55px 60px 54px;
+    }
+    .demo {
+        padding: 3% 10% 3% 55%;
+    }
 .benifit_content {
     display: flex;
 }
@@ -966,5 +985,32 @@ and (min-width : 1224px) {
     position: relative;
     top: 80px;
 }
+.searchbox {
+    width: 384px;}
 }
 /* *********************************** */
+@media only screen 
+and (min-device-width : 1025px) 
+and (max-device-width : 1224px) {
+.container{
+    margin: 0 14px;
+}
+.navbar {
+    padding: 60px 55px 60px 65px;
+}
+.demo {
+    padding: 3% 10% 3% 56%;
+}
+.square_box {
+    position: relative;
+    bottom: 69px;
+    left: 99px;
+}
+.search-container {
+    position: relative;
+    top: 81px;
+}
+.searchbox {
+    width: 295px;
+}
+}

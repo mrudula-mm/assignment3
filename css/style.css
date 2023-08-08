@@ -1,19 +1,22 @@
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
 *{
     box-sizing: border-box;
-    margin: 0%; 
-    padding: 0%;
     font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 .container{
     max-width: 1350px;
     margin: auto;
-}
-body{
-    margin: 0%;
-}
-header{
-    position: relative;
-    display: block;
 }
 .navbar{
     max-width: 1350px;
@@ -23,6 +26,7 @@ header{
     align-items: center;
     justify-content: space-between;
 }
+
 .logo{
     font-size: 20px;
     font-weight: bold;
@@ -32,25 +36,40 @@ header{
     text-decoration:none;
     color: #000;
 }
-.headcenter{
-    display: flex;
-    text-align: center;
-    gap: 60px;
-}
-.centerLog{
+.centerLog{  
     padding: 0 10px;
     text-decoration: none;
     color: #000;
     font-size: 20px;
+    cursor: pointer;
+}
+.headleft{  
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
+.menu{
+    display: flex;
+    text-align: center;
+    list-style: none;
 }
 .navLeft{
     color: #000;
 }
-.headleft{
-    display: flex;
-    gap: 30px;
-} 
+.navsearch {
+    color: #000;
+    font-size: 22px;
+}
+#checkbtn {
+    display: none;
+}
+.check{
+    display: none;
+}
 /* *********************************** */
+.banner{
+    padding-bottom: 10px;
+}
 .square_box {
     width: 115px;
     height: 93px;
@@ -80,21 +99,21 @@ header{
     padding-top: 15px;
     position: relative;
 }
-.demo{
+.demo {
     position: absolute;
     top: 19%;
     left: -50%;
     max-width: 100%;
     background-color: grey;
-    padding: 3% 10% 3% 50%;
+    padding: 6% 13% 5% 53%;
 }
-.main_section_text{
-    max-width: 300px;
+.main_section_text {
+    max-width: 280px;
     color: white;
 }
-.h1class{
+.h1class {
     color: #fff;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
 }
 .pclass{
@@ -110,6 +129,9 @@ header{
     height: 692px;
 }
 /* *********************************** */
+.benifit{
+    padding-bottom: 10px;
+}
 .section_service{
     margin: 50px 0;
     text-align: left;
@@ -170,25 +192,18 @@ header{
     margin-bottom: 20px;
     margin-top: 5px;
 }
-.quality_content {
+.benifit_para {
     font-size: 18px;
     width: 85%;
     display: inline-block;
 }
-.shipping_content{
-	font-size: 18px;
-	width: 85%;
-	display: inline-block;
-}
-.warranty_content{
-	font-size: 18px;
-	width: 85%;
-	display: inline-block;
-}
 /* ************************** */
+.experience{
+    padding-bottom: 10px;
+}
 .section_experience {
     display: flex;
-    line-height: normal;
+    gap: 80px;
 }
 .experience_imagediv{
     width: 100%;
@@ -198,13 +213,11 @@ header{
     height: 100%;
 }
 .experience_content {
-    margin: 0 0 0 100px;
     display: flex;
     flex-direction: column;
     gap: 53px;
 }
 .experience_section_head{
-    font-weight: bold;
     font-size: 50px;
 }
 .review_section_head{
@@ -244,6 +257,9 @@ header{
     margin-left: -5px;
 }
 /* ****************************** */
+.process{
+    padding-bottom: 10px;
+}
 .process_section {
     display: flex;
     padding: 91px 0px 35px 0px;
@@ -302,7 +318,7 @@ header{
 .vl {
     border-left: 3px solid lightgrey;
     height: auto;
-    margin-left: -35px;
+    margin-left: -39px;
     margin-right: 37px;
     margin-bottom: 10px;
     padding-left: 8px;
@@ -315,7 +331,10 @@ header{
 .process_imagediv{
     width: 100%;
 }
-/* **************************************************** */
+/* ******************************************* */
+.review{
+    padding-bottom: 10px;
+}
 .review_section{
     padding: 35px 50px;
 }
@@ -400,12 +419,13 @@ header{
     width: 400px;
 }
 .search_button{
+    border: none;
     padding: 10px;
     background: gray;
     float: right;
 }
 /* *********************************** */
-.footer{
+footer{
     background-color: grey;
     width: 100%;
 }
@@ -452,12 +472,59 @@ header{
 }
 
 /* *********************************** */
-/* *********************************** */
-@media only screen 
-and (min-width : 321px) 
-and (max-device-width : 480px) {
-.container{
-    margin: 16px;
+@media only screen  and (max-width : 480px) 
+{ 
+    .container{
+        margin: 0 16px;
+    }
+.menu{
+    display: block;
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+    }
+
+.check{
+    display: block;
+    font-size: 20px;
+    color: grey;
+    }
+#checkbtn {
+    display: none;
+    }
+
+#checkbtn:checked~.headcenter {
+    display: block;
+    }
+
+ #checkbtn:checked~.check {
+    rotate: 90deg;
+    }
+header{
+    position: fixed;
+    max-width: 100%;
+    height: 50px;
+    z-index: 1;
+    background-color: white;
+    right: 0;
+    left: 0;
+    }
+.headcenter {
+    position: fixed;
+    display: none;
+    width: 100%;
+    padding: 10px;
+    top:50px;
+    left: 0;
+    background-color:white;
+    text-align: center;
+    }
+
+.headleft {
+display: none;
+}
+.navbar{
+    padding: 10px;
 }
 .square_arrow_box{
     display: none;
@@ -465,7 +532,9 @@ and (max-device-width : 480px) {
 .square_box{
     display: none;
 }
-
+.section_service::before{
+    display: none;
+}
 .main_section_text {
     height: auto;
     background: grey;
@@ -494,37 +563,29 @@ and (max-device-width : 480px) {
     padding: 10px;
 }
 .section_service {
-    font-size: 54px;
+    font-size: 40px;
     max-width: 100%;
+    text-align: center;
+}
+.benifit_heading{
+    margin: 0;
 }
 .benifit_content {
     display: grid;
 }
 .benifit_head{
-    font-size: 43px;
+    font-size: 25px;
 }
-.quality_content{
-    font-size: 30px;
+.benifit_para{
+    font-size: 15px;
     width: 80%;
-}
-.shipping_content {
-    font-size: 30px;
-    width: 80%;
-}
-.warranty_content {
-    font-size: 30px;
-    width: 80%;
-}
-.brief_heading {
-    font-size: 45px;
-    font-weight: bold;
 }
 .user_content {
     display: grid;
 }
 .experience_text{
     text-align: center;
-    font-size: 27px;
+    font-size: 20px;
     text-align: left;
 }
 .section_experience{
@@ -535,8 +596,8 @@ and (max-device-width : 480px) {
     height: auto;
 }
 .experience_section_head{
-    text-align: left;
-    font-size: 63px;
+    text-align: center;
+    font-size: 40px;
 }
 .experience_content {
     width: 100%;
@@ -545,39 +606,49 @@ and (max-device-width : 480px) {
     flex-direction: column;
     justify-content: space-between;
     padding: 15px;
+    gap: 38px;
 }
 .experience_number{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 34px;
+    font-size: 20px;
 }
 .experience_button {
-    padding: 15px;
+    padding: 3px;
     margin-bottom: -39px;
     background-color: #fff;
-    margin-left: 113px;
-    font-size: 47px;
+    font-size: 24px;
 }
-
+.number_content {
+    padding: 8px;
+}
+.number{
+font-size: 40px;
+}
  .process_section {
     display:grid;
 }
 .process_section_head{
     text-align: left;
-    font-size: 75px;
+    font-size: 40px;
 }
 .process_image {
     width: 100%;
-    height: 700px;
     margin-top: 50px;
+    padding-left: 0;
 }
+.brief_heading {
+    font-size: 35px;
+    font-weight: bold;
+}
+
 .processing_head{
-    font-size: 45px;
+    font-size: 35px;
     font-weight: bold;
 }
 .finishHead{
-    font-size: 45px;
+    font-size: 35px;
     font-weight: bold;
 }
 .step_section {
@@ -585,40 +656,48 @@ and (max-device-width : 480px) {
     margin-bottom: 10px;
 }
 .process_text p {
-    font-size: 32px;
+    font-size: 20px;
 }
 .review_section_head{
-    text-align: left;
-    font-size: 75px;
+    text-align: center;
+    font-size: 40px;
 }
 .review_section{
     text-align: center;
+    padding: 0;
 }
 .review_heading {
     color: #FFF;
-    font-size: 30px;
+    font-size: 25px;
     text-align: left;
 }
 .review_para {
     text-align: left;
+    font-size: 15px;
 }
 .user_data {
     text-align: left;
 }
 .name_post {
-    font-size: 29px;
+    font-size: 20px;
     color: #FFF;
 }
+.name_post{
+    font-size: 16px;
+}
 .user2 {
-    height: 80px;
-    border-radius: 68px;
+    height: 53px;
+    border-radius: 60px;
 }
 .user1 {
-    height: 80px;
-    border-radius: 68px;
+    height: 53px;
+    border-radius: 60px;
 }
 .review_box i{
     text-align: left;
+}
+.subscribe_head{
+    font-size: 40px;
 }
 .subscribe_para {
     text-align: center;
@@ -627,21 +706,23 @@ and (max-device-width : 480px) {
     font-size: 15px;
 }
 .search_form {
-    margin: 0 30%;
+    margin: 0;
     padding: 6px;
     background: #FFF;
     border: none;
     box-shadow: 0 0 5px black;
-    height: 66px;
+    height: 55px;
 }
+
 .searchbox {
     border: none;
     float: left;
     padding: 10px;
-    width: 265px;
+    width: 174px;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 11px;
 }
+
 .search_button {
     padding: 10px;
     background: gray;
@@ -649,11 +730,12 @@ and (max-device-width : 480px) {
     font-weight: bold;
     font-size: 12px;
 }
+
 .search-container {
     text-align: center;
     margin: 20px;
     position: relative;
-    top: 100px;
+    top: 85px;
 }
 .footer_section {
     display: flex;
@@ -675,22 +757,33 @@ and (max-device-width : 480px) {
 
 /* *********************************** */
 @media only screen 
-and (min-device-width : 481px) 
-and (max-device-width : 769px) {
-.container{
-    margin: 0 16px;
-}  
-.navbar {
-    padding: 60px 55px 60px 64px;
-}  
-.main_section_text{
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
+and (min-width : 481px) 
+and (max-width : 769px) 
+{
+    .container{
+        margin: 0 16px;
+    }
+.process_content{
+    padding-left: 20px;
 }
-.main_section_text {
-    max-width: 100%;
-    color: white;
+.section_experience{
+    gap: 38px;
+}
+.process_imagediv{
+    padding-right: 20px;
+}
+.navbar {
+    padding: 50px 40px 50px 40px;
+}
+.headcenter{
+    gap: 9px;
+}
+.centerLog{
+    padding: 5px;
+    font-size: 15px;
+}
+.headleft{
+    gap: 21px;
 }
 .main_section_text {
     background: grey;
@@ -700,7 +793,10 @@ and (max-device-width : 769px) {
     text-align: left;
 }
 .h1class {
-    font-size: 29px;
+    font-size: 20px;
+}
+.demo{
+    left: -53%;
 }
 .main_section_text p {
     color: #FFF;
@@ -718,6 +814,7 @@ and (max-device-width : 769px) {
     display: flex;
     margin-left: 17%;
 }
+
 .demo {
     padding: 3% 5% 3% 55%;; 
 }
@@ -743,19 +840,19 @@ and (max-device-width : 769px) {
     display: flex;
     width: 100%;
 }
-.quality_content {
-    width: 100%;
+.benifit_para {
+    font-size: 16px;
 }
-.shipping_content{
-    width: 100%;
-} 
-.warranty_content{
-    width: 100%;
+.benicon {
+    width: 70px;
+    height: 70px;
 }
 .benifit_head {
-    font-size: 25px;
+    font-size: 18px;
     font-weight: bold;
     display: block;
+    margin-bottom: 13px;
+    margin-top: 18px;
 }
 .experience_imagediv{
     width: 100%;
@@ -768,20 +865,16 @@ and (max-device-width : 769px) {
     gap: 27px;
 }
 .experience_section_head{
-    font-size: 45px;
+    font-size: 30px;
 }
 .experience_text{
-    font-size: 119%;
+    font-size: 92%;
 }
 .number{
-    font-size: 71px;
+    font-size: 40px;
 }
 .number_title{
-    font-size: 122%;
-}
-
-.section_service::before {
-    display: none;
+    font-size: 110%;
 }
 .section_service {
     font-size: 29px;
@@ -789,16 +882,33 @@ and (max-device-width : 769px) {
 }
 .process_section_head {
     text-align: left;
-    font-size: 30px;
+    font-size: 24px;
     position: relative;
     font-weight: bold;
+}
+.brief_heading{
+    font-size: 20px;
+}
+.processing_head{
+    font-size: 20px;
+}
+.finishHead{
+    font-size: 20px;
+}
+.process_text p{
+    font-size: 10px;
 }
 .process_image {
     width: 100%;
 }
+.process_numberdiv{
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+}
 .review_section_head {
     text-align: left;
-    font-size: 39px;
+    font-size: 35px;
     position: relative;
     font-weight: bold;
 }
@@ -810,16 +920,19 @@ and (max-device-width : 769px) {
     display: flex;
 }
 .review_heading{
-    font-size: 24px;
+    font-size: 20px;
 }
 .review_para{
-    font-size: 15px;
+    font-size: 11px;
 }
 .subscribe_head {
-    font-size: 45px;
+    font-size: 40px;
 }
 .subscribe_para {
     font-size: 20px;
+}
+.search_form{
+    margin: 0 10%;
 }
 .search-container {
     position: relative;
@@ -833,6 +946,13 @@ and (max-device-width : 769px) {
 .search_button {
     padding: 9px;
 }
+.footer_heads {
+    padding: 0;
+    font-size: 18px;
+}
+.footer_section{
+    gap: 20px;
+}
 .fotpara{
     font-size: 10px;
 }
@@ -842,17 +962,23 @@ and (max-device-width : 769px) {
 .footer_icons{
     font-size: 13px;
 }
+.footerlink_section{
+    background: none;
+    position: initial;
+}
+.footer_luxterior {
+    max-width: 200px;
+    padding-left: 20px;
+}
 }
 /* *********************************** */
 
 @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-{
-.container{
-    margin: 0px 16px;
-    /* background-color: red; */
-}
+and (min-width : 768px) 
+and (max-width : 1024px) {
+    .container{
+        margin: 0 16px;
+    }
 .navbar{
     padding: 60px 82px 60px 54px;
 }
@@ -861,7 +987,7 @@ and (max-device-width : 1024px)
     margin-left: 15%;
 }
 .main_section_image {
-    width: 736px;
+    width: 90%;
     height: 451px;
 }
 .square_arrow_box {
@@ -894,6 +1020,7 @@ and (max-device-width : 1024px)
     background-color: grey;
     padding: 4% 4% 4% 55%;
 }
+
 .h1class {
     color: #fff;
     font-size: 27px;
@@ -932,7 +1059,6 @@ and (max-device-width : 1024px)
     margin-bottom: 60px;
 }
 .experience_content {
-    margin: 0 0 0 100px;
     display: flex;
     flex-direction: column;
     gap: 37px;
@@ -965,36 +1091,15 @@ and (max-device-width : 1024px)
 .searchbox {
     width: 262px;
 }
+.search_form{
+    margin: 0 20%;
+}
 }
 /* *********************************** */
-@media only screen 
-and (min-width : 1224px) {
-.navbar {
-    padding: 60px 55px 60px 54px;
-    }
-    .demo {
-        padding: 3% 10% 3% 55%;
-    }
-.benifit_content {
-    display: flex;
-}
-.user_content {
-    display: flex;
-}
-.search-container {
-    position: relative;
-    top: 80px;
-}
-.searchbox {
-    width: 384px;}
-}
 /* *********************************** */
 @media only screen 
-and (min-device-width : 1025px) 
-and (max-device-width : 1224px) {
-.container{
-    margin: 0 14px;
-}
+and (min-width : 1025px) 
+and (max-width : 1224px) {
 .navbar {
     padding: 60px 55px 60px 65px;
 }
@@ -1014,3 +1119,27 @@ and (max-device-width : 1224px) {
     width: 295px;
 }
 }
+/* *********************************** */
+@media only screen 
+and (min-width : 1224px) {
+.navbar {
+padding: 60px 55px 60px 54px;
+}
+.demo {
+    padding: 3% 10% 3% 55%;
+    }
+.benifit_content {
+    display: flex;
+}
+.user_content {
+    display: flex;
+}
+.search-container {
+    position: relative;
+    top: 80px;
+}
+.searchbox {
+    width: 384px;
+}
+}
+    

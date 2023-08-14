@@ -17,7 +17,6 @@ body
 .container{
     max-width: 1350px;
     margin: auto;
-    /* background-color: red; */
 }
 .navbar{
     max-width: 1350px;
@@ -269,19 +268,11 @@ body
     display: flex;
     padding: 91px 0px 35px 0px;
 }
-/* .process_content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-bottom: 71px;
-} */
 .process_content {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 26px;
-    /* justify-content: space-between; */
     padding-bottom: 71px;
 }
 .process_step{
@@ -589,7 +580,6 @@ header{
 }
 .benifit_block {
     padding-left: 20px;
-    /* display: block; */
 }
 .benifit_heading{
     margin: 0;
@@ -685,7 +675,6 @@ font-size: 40px;
     width: 50px;
     height: 50px;
     font-size: 18px;
-    /* margin-bottom: 17px; */
 }
 .step_section {
     width: 70%;
@@ -802,11 +791,7 @@ and (max-width : 769px)
 .process_content{
     padding-left: 20px;
 }
-/* .section_experience{
-    gap: 38px;
-} */
 .section_experience {
-    /* gap: 38px; */
     display: flex;
     flex-direction: column;
 }
@@ -1096,26 +1081,6 @@ and (max-width : 1024px) {
 .benifit_content {
     display: flex;
     padding-bottom: 5%;
-}
-/* .icon1 {
-    max-width: 160%;
-    height: 100%;
-    object-fit: contain;
-}
-.icon2 {
-    max-width: 160%;
-    height: 100%;
-    object-fit: contain;
-}
-.icon3 {
-    max-width: 160%;
-    height: 100%;
-    object-fit: contain;
-} */
-.icon1 {
-    max-width: 160%;
-    height: 100%;
-    object-fit: contain;
 }
 .benifit_head {
     font-size: 25px;

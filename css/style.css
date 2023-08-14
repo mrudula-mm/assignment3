@@ -17,6 +17,7 @@ body
 .container{
     max-width: 1350px;
     margin: auto;
+    /* background-color: red; */
 }
 .navbar{
     max-width: 1350px;
@@ -36,6 +37,7 @@ body
     text-decoration:none;
     color: #000;
 }
+
 .centerLog{  
     padding: 0 10px;
     text-decoration: none;
@@ -47,6 +49,9 @@ body
     display: flex;
     gap: 30px;
     cursor: pointer;
+}
+.headleft i{
+    color: black;
 }
 .menu{
     display: flex;
@@ -99,7 +104,7 @@ body
     padding-top: 15px;
     position: relative;
 }
-.demo {
+.textbox {
     position: absolute;
     top: 19%;
     left: -50%;
@@ -111,12 +116,12 @@ body
     max-width: 280px;
     color: white;
 }
-.h1class {
+.textbox_head {
     color: #fff;
     font-size: 35px;
     font-weight: bold;
 }
-.pclass{
+.textbox_para{
     font-size: 15px;
     color: #fff;
 }
@@ -145,7 +150,7 @@ body
     display: block;
     width: 100px;
     height: 5px;
-    background: lightgrey;
+    background: grey;
     left: -146px;
     top: 50%;
     position: absolute;
@@ -182,7 +187,7 @@ body
     height: 100%;
     object-fit: contain;
 }
-.benicon {
+.benifit_icon {
     width: 60px;
     height: 60px;
 }
@@ -226,12 +231,12 @@ body
 }
 
 .experience_text{
-    font-size: 125%;
+    font-size: 20px;
     font-weight: 500;
     line-height: normal;
 }
 .number_title{
-    font-size: 125%;
+    font-size: 20px;
     font-weight: 500;
 }
 .experience_number{
@@ -264,11 +269,19 @@ body
     display: flex;
     padding: 91px 0px 35px 0px;
 }
-.process_content {
+/* .process_content {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 71px;
+} */
+.process_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    /* justify-content: space-between; */
     padding-bottom: 71px;
 }
 .process_step{
@@ -292,6 +305,7 @@ body
 .process_section_head{
     font-weight: bold;
     font-size: 47px;
+    margin-bottom: 40px;
 }
 .process_numberdiv {
     background-color: grey;
@@ -315,7 +329,7 @@ body
 .process_text p{
     font-size: 18px;
 }
-.vl {
+.number_line {
     border-left: 3px solid lightgrey;
     height: auto;
     margin-left: -39px;
@@ -521,7 +535,7 @@ header{
     }
 
 .headleft {
-display: none;
+     display: none;
 }
 .navbar{
     padding: 10px;
@@ -539,11 +553,16 @@ display: none;
     height: auto;
     background: grey;
     width: 100%;
-    padding: 3rem;
+    padding: 9px;
     position: inherit;
     left: 0;
     top: 20%;
     max-width: 100%;
+}
+.textbox_head {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
 }
 .main_image_div {
     display: flex;
@@ -556,16 +575,21 @@ display: none;
 .main_section{
     display: contents;
 }
-.demo {
+.textbox {
     position: relative;
     top: 0;
     left: 0;
     padding: 10px;
 }
 .section_service {
-    font-size: 40px;
+    font-size: 31px;
     max-width: 100%;
-    text-align: center;
+    text-align: left;
+    margin: 35px 0;
+}
+.benifit_block {
+    padding-left: 20px;
+    /* display: block; */
 }
 .benifit_heading{
     margin: 0;
@@ -595,9 +619,9 @@ display: none;
     width: 100%;
     height: auto;
 }
-.experience_section_head{
-    text-align: center;
-    font-size: 40px;
+.experience_section_head {
+    text-align: left;
+    font-size: 31px;
 }
 .experience_content {
     width: 100%;
@@ -606,19 +630,19 @@ display: none;
     flex-direction: column;
     justify-content: space-between;
     padding: 15px;
-    gap: 38px;
+    gap: 25px;
 }
 .experience_number{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
     font-size: 20px;
 }
 .experience_button {
     padding: 3px;
     margin-bottom: -39px;
     background-color: #fff;
-    font-size: 24px;
+    font-size: 18px;
 }
 .number_content {
     padding: 8px;
@@ -628,10 +652,16 @@ font-size: 40px;
 }
  .process_section {
     display:grid;
+    padding: 35px 0px 35px 0px;
 }
 .process_section_head{
     text-align: left;
-    font-size: 40px;
+    font-size: 31px;
+    margin-bottom: 17px;
+}
+.process_content{
+    gap: 4px;
+    padding-bottom: 20px;
 }
 .process_image {
     width: 100%;
@@ -639,28 +669,34 @@ font-size: 40px;
     padding-left: 0;
 }
 .brief_heading {
-    font-size: 35px;
+    font-size: 26px;
     font-weight: bold;
 }
 
 .processing_head{
-    font-size: 35px;
+    font-size: 26px;
     font-weight: bold;
 }
 .finishHead{
-    font-size: 35px;
+    font-size: 26px;
     font-weight: bold;
+}
+.process_numberdiv{
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    /* margin-bottom: 17px; */
 }
 .step_section {
     width: 70%;
     margin-bottom: 10px;
 }
 .process_text p {
-    font-size: 20px;
+    font-size: 17px;
 }
 .review_section_head{
-    text-align: center;
-    font-size: 40px;
+    text-align: left;
+    font-size: 31px;
 }
 .review_section{
     text-align: center;
@@ -766,8 +802,13 @@ and (max-width : 769px)
 .process_content{
     padding-left: 20px;
 }
-.section_experience{
+/* .section_experience{
     gap: 38px;
+} */
+.section_experience {
+    /* gap: 38px; */
+    display: flex;
+    flex-direction: column;
 }
 .process_imagediv{
     padding-right: 20px;
@@ -792,10 +833,10 @@ and (max-width : 769px)
     margin-bottom: 15px;
     text-align: left;
 }
-.h1class {
+.textbox_head {
     font-size: 20px;
 }
-.demo{
+.textbox{
     left: -53%;
 }
 .main_section_text p {
@@ -815,7 +856,7 @@ and (max-width : 769px)
     margin-left: 17%;
 }
 
-.demo {
+.textbox {
     padding: 3% 5% 3% 55%;; 
 }
 .square_arrow_box {
@@ -832,7 +873,7 @@ and (max-width : 769px)
 }
 .benifit_content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: left;
     padding-bottom: 5%;
 }
@@ -843,23 +884,23 @@ and (max-width : 769px)
 .benifit_para {
     font-size: 16px;
 }
-.benicon {
-    width: 70px;
-    height: 70px;
+.benifit_icon {
+    width: 40px;
+    height: 40px;
 }
 .benifit_head {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
     display: block;
     margin-bottom: 13px;
-    margin-top: 18px;
+    margin-top: 1px;
 }
 .experience_imagediv{
     width: 100%;
 }
 .experience_image{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 .experience_content{
     gap: 27px;
@@ -868,13 +909,22 @@ and (max-width : 769px)
     font-size: 30px;
 }
 .experience_text{
-    font-size: 92%;
+    font-size: 16px;
+}
+.experience_number {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.experience_buttondiv{
+    display: flex;
+    justify-content: center;
 }
 .number{
     font-size: 40px;
 }
 .number_title{
-    font-size: 110%;
+    font-size: 18px;
 }
 .section_service {
     font-size: 29px;
@@ -882,12 +932,20 @@ and (max-width : 769px)
 }
 .process_section_head {
     text-align: left;
-    font-size: 24px;
+    font-size: 35px;
     position: relative;
     font-weight: bold;
 }
+.step_section{
+    padding-top: 9px;
+}
 .brief_heading{
     font-size: 20px;
+}
+.process_section{
+    display: flex;
+    flex-direction: column;
+    padding: 53px 0px 35px 0px;
 }
 .processing_head{
     font-size: 20px;
@@ -896,7 +954,7 @@ and (max-width : 769px)
     font-size: 20px;
 }
 .process_text p{
-    font-size: 10px;
+    font-size: 20px;
 }
 .process_image {
     width: 100%;
@@ -918,12 +976,16 @@ and (max-width : 769px)
 }
 .user_content {
     display: flex;
+    flex-direction: column;
+}
+.review_box{
+    padding: 25px;
 }
 .review_heading{
-    font-size: 20px;
+    font-size: 23px;
 }
 .review_para{
-    font-size: 11px;
+    font-size: 20px;
 }
 .subscribe_head {
     font-size: 40px;
@@ -1012,7 +1074,7 @@ and (max-width : 1024px) {
     padding-top: 15px;
     position: relative;
 }
-.demo {
+.textbox {
     position: absolute;
     top: 17%;
     left: -51%;
@@ -1021,19 +1083,39 @@ and (max-width : 1024px) {
     padding: 4% 4% 4% 55%;
 }
 
-.h1class {
+.textbox_head {
     color: #fff;
     font-size: 27px;
     font-weight: bold;
 }
 
-.pclass {
+.textbox_para {
     font-size: 17px;
     color: #fff;
 }
 .benifit_content {
     display: flex;
     padding-bottom: 5%;
+}
+/* .icon1 {
+    max-width: 160%;
+    height: 100%;
+    object-fit: contain;
+}
+.icon2 {
+    max-width: 160%;
+    height: 100%;
+    object-fit: contain;
+}
+.icon3 {
+    max-width: 160%;
+    height: 100%;
+    object-fit: contain;
+} */
+.icon1 {
+    max-width: 160%;
+    height: 100%;
+    object-fit: contain;
 }
 .benifit_head {
     font-size: 25px;
@@ -1047,13 +1129,13 @@ and (max-width : 1024px) {
     font-size: 45px;
 }
 .experience_text {
-    font-size: 115%;
+    font-size: 16px;
 }
 .number {
     font-size: 69px;
 }
 .number_title {
-    font-size: 120%;
+    font-size: 18px;
 }
 .experience_button {
     margin-bottom: 60px;
@@ -1103,7 +1185,7 @@ and (max-width : 1224px) {
 .navbar {
     padding: 60px 55px 60px 65px;
 }
-.demo {
+.textbox {
     padding: 3% 10% 3% 56%;
 }
 .square_box {
@@ -1125,7 +1207,7 @@ and (min-width : 1224px) {
 .navbar {
 padding: 60px 55px 60px 54px;
 }
-.demo {
+.textbox {
     padding: 3% 10% 3% 55%;
     }
 .benifit_content {

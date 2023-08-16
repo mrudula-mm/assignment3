@@ -478,7 +478,7 @@ footer{
 @media only screen  and (max-width : 480px) 
 { 
     .container{
-        margin: 0 16px;
+        margin: 0 10px;
     }
 .menu{
     display: block;

@@ -1,10 +1,3 @@
-body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-}
 *{
     font-family: 'Poppins', sans-serif;
     padding: 0;
@@ -13,19 +6,24 @@ body
     list-style: none;
     box-sizing: border-box;
 }
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
 .container{
     max-width: 1350px;
     margin: auto;
 }
 .navbar{
-    max-width: 1350px;
     margin: 0 auto;
-    padding: 60px 55px 60px 0px;
+    padding: 50px 55px 50px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .logo{
     font-size: 20px;
     font-weight: bold;
@@ -35,7 +33,6 @@ body
     text-decoration:none;
     color: #000;
 }
-
 .centerLog{  
     padding: 0 10px;
     text-decoration: none;
@@ -56,13 +53,6 @@ body
     text-align: center;
     list-style: none;
 }
-.navLeft{
-    color: #000;
-}
-.navsearch {
-    color: #000;
-    font-size: 22px;
-}
 #checkbtn {
     display: none;
 }
@@ -72,31 +62,6 @@ body
 /* *********************************** */
 .banner{
     padding-bottom: 10px;
-}
-.square_box {
-    width: 115px;
-    height: 93px;
-    border: 3px solid grey;
-    position: relative;
-    bottom: 65px;
-    left: 120px;
-    z-index: -1;
-}
-.square_arrow_box {
-    height: 93px;
-    width: 115px;
-    background-color: #555;
-    position: absolute;
-    right: 36px;
-    bottom: 71px;
-    text-align: center;
-}
-.square_arrow_box i{
-    color: #FFF;
-    font-size: 30px;
-    position: relative;
-    top: 30px;
-  
 }
 .main_section{
     padding-top: 15px;
@@ -130,6 +95,26 @@ body
 .main_section_image{
     width: 95%;
     height: 692px;
+}
+.main_image_div::before {
+    content: "";
+    border: 4px solid grey;
+    padding: 41px;
+    position: absolute;
+    bottom: -20px;
+    left: 9%;
+    z-index: -1;
+}
+.main_image_div::after {
+    content: '\f063';
+    font-family: FontAwesome;
+    font-size: xx-large;
+    background-color: grey;
+    padding: 30px;
+    color: white;
+    position: absolute;
+    bottom: -20px;
+    right: 2%;
 }
 /* *********************************** */
 .benifit{
@@ -317,9 +302,7 @@ body
 .number_line {
     border-left: 3px solid lightgrey;
     height: auto;
-    margin-left: -39px;
-    margin-right: 37px;
-    margin-bottom: 10px;
+    margin: 0px 37px 10px -39px;
     padding-left: 8px;
 }
 .process_image{
@@ -346,13 +329,12 @@ body
 }
 .user_content{
     display: flex;
+    gap:30px;
     padding: 50px 0px;
 }
-
 .review_box{
     background: grey;
-    padding: 30px 50px;
-    margin: 10px;
+    padding: 30px;
     display: grid;
 }
 .review_heading{
@@ -373,11 +355,6 @@ body
 .user2{
     height: 40px;
     border-radius: 20px;
-}
-.reviewDot{
-    background: #FFF;
-    border-radius: 15px;
-    padding: 5px 8px;
 }
 .user_data{
     position: static;
@@ -430,15 +407,6 @@ body
 /* *********************************** */
 footer{
     background-color: grey;
-    width: 100%;
-}
-.footer_section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: white;
-    background-color: grey;
-    padding: 52px 19px 56px 0px;
     width: 100%;
 }
 .footer_section {
@@ -529,12 +497,13 @@ header{
 .navbar{
     padding: 10px;
 }
-.square_arrow_box{
+.main_image_div::after {
     display: none;
 }
-.square_box{
+.main_image_div::before {
     display: none;
 }
+
 .section_service::before{
     display: none;
 }
@@ -596,7 +565,6 @@ header{
     display: grid;
 }
 .experience_text{
-    text-align: center;
     font-size: 20px;
     text-align: left;
 }
@@ -687,6 +655,9 @@ font-size: 40px;
 .process_text p {
     font-size: 17px;
 }
+.review_box{
+    padding: 20px;
+}
 .review_section_head{
     text-align: left;
     font-size: 31px;
@@ -756,7 +727,7 @@ font-size: 40px;
     padding: 10px;
     background: gray;
     float: right;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 12px;
 }
 
@@ -803,7 +774,7 @@ and (max-width : 769px)
     padding-right: 20px;
 }
 .navbar {
-    padding: 50px 40px 50px 40px;
+    padding: 45px 40px 45px 40px;
 }
 .headcenter{
     gap: 9px;
@@ -848,17 +819,13 @@ and (max-width : 769px)
 .textbox {
     padding: 3% 5% 3% 55%;; 
 }
-.square_arrow_box {
-    right: 18px;
+
+.main_image_div::after {
+    right: 2%;
 }
-.square_box {
-    width: 115px;
-    height: 93px;
-    border: 3px solid grey;
-    position: relative;
-    bottom: 65px;
-    left: 74px;
-    z-index: -1;
+
+.main_image_div::before {
+    left: 14%;
 }
 .benifit_content {
     display: flex;
@@ -990,7 +957,7 @@ and (max-width : 769px)
 }
 .searchbox {
     padding: 10px;
-    width: 260px;
+    width: 236px;
     font-size: 16px;
 }
 .search_button {
@@ -1004,7 +971,7 @@ and (max-width : 769px)
     gap: 20px;
 }
 .fotpara{
-    font-size: 10px;
+    font-size: 12px;
 }
 .footerlink_section {
     font-size: 12px;
@@ -1015,10 +982,14 @@ and (max-width : 769px)
 .footerlink_section{
     background: none;
     position: initial;
+    font-size: 12px;
 }
 .footer_luxterior {
     max-width: 200px;
     padding-left: 20px;
+}
+.footer_section{
+    line-height: 30px;
 }
 }
 /* *********************************** */
@@ -1026,11 +997,11 @@ and (max-width : 769px)
 @media only screen 
 and (min-width : 768px) 
 and (max-width : 1024px) {
-    .container{
-        margin: 0 16px;
-    }
+ .container{
+    margin: 0 16px;
+}
 .navbar{
-    padding: 60px 82px 60px 54px;
+    padding: 30px 82px 30px 54px;
 }
 .main_image_div {
     display: flex;
@@ -1039,24 +1010,6 @@ and (max-width : 1024px) {
 .main_section_image {
     width: 90%;
     height: 451px;
-}
-.square_arrow_box {
-    height: 93px;
-    width: 115px;
-    background-color: #555;
-    position: absolute;
-    right: 51px;
-    bottom: 69px;
-    text-align: center;
-}
-.square_box {
-    width: 115px;
-    height: 93px;
-    border: 3px solid grey;
-    position: relative;
-    bottom: 69px;
-    left: 118px;
-    z-index: -1;
 }
 .main_section {
     padding-top: 15px;
@@ -1070,7 +1023,6 @@ and (max-width : 1024px) {
     background-color: grey;
     padding: 4% 4% 4% 55%;
 }
-
 .textbox_head {
     color: #fff;
     font-size: 27px;
@@ -1080,6 +1032,17 @@ and (max-width : 1024px) {
 .textbox_para {
     font-size: 17px;
     color: #fff;
+}
+.section_service {
+    margin: 50px 0;
+    font-size: 33px;
+    max-width: 450px;
+}
+.main_image_div::after {
+    right: 6%;
+}
+.main_image_div::before {
+    left: 13%;
 }
 .benifit_content {
     display: flex;
@@ -1097,18 +1060,31 @@ and (max-width : 1024px) {
     width: 50%;
     height: 60px;
 } 
+
+.benifit_para {
+    font-size: 15px;
+}
 .experience_section_head {
-    font-size: 45px;
+    font-size: 34px;
 }
 .experience_text {
-    font-size: 16px;
+    font-size: 14px;
 }
 .number {
-    font-size: 69px;
+    font-size: 56px;
 }
 .number_title {
-    font-size: 18px;
+    font-size: 14px;
 }
+.experience_image {
+    max-width: 90%;
+    height: 90%;
+}
+.section_experience {
+    display: flex;
+    gap: 5px;
+}
+
 .experience_button {
     margin-bottom: 60px;
 }
@@ -1117,14 +1093,62 @@ and (max-width : 1024px) {
     flex-direction: column;
     gap: 37px;
 }
+.process_image {
+    max-width: 100%;
+    height: 90%;
+    padding-left: 30px;
+}
+
 .process_section {
     display: flex;
+    padding: 15px 0px 5px 0px;
 }
 .process_section_head {
-    font-size: 45px;
+    font-size: 33px;
+    margin-bottom: 7px;
+}
+.process_text p{
+    font-size: 14px;
+}
+.brief_heading{
+    font-size: 25px;
+}
+.processing_head{
+    font-size: 25px;
+}
+.finishHead{
+    font-size: 25px;
+}
+.process_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding-bottom: 71px;
+}
+.process_numberdiv {
+    background-color: grey;
+    color: white;
+    border: 12px solid gray;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin-left: -1px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.user_content {
+    padding: 10px 0px;
+}
+.review_section {
+    padding: 25px 30px;
+}
+.review_box{
+    padding: 20px;
 }
 .review_section_head {
-    font-size: 45px;
+    font-size: 34px;
 }
 .review_heading {
     font-size: 23px;
@@ -1133,10 +1157,10 @@ and (max-width : 1024px) {
     font-size: 15px;
 }
 .subscribe_head {
-    font-size: 45px;
+    font-size: 34px;
 }
 .subscribe_para {
-    font-size: 20px;
+    font-size: 16px;
 }
 .search-container {
     position: relative;
@@ -1148,40 +1172,59 @@ and (max-width : 1024px) {
 .search_form{
     margin: 0 20%;
 }
+.subcribe_section {
+    padding-bottom: 35px;
+}
+.footer_section{
+    line-height: 28px;
+    font-size: 14px;
+}
 }
 /* *********************************** */
 /* *********************************** */
 @media only screen 
 and (min-width : 1025px) 
 and (max-width : 1224px) {
+.container{
+    margin: 0 16px;
+}
 .navbar {
     padding: 60px 55px 60px 65px;
 }
 .textbox {
     padding: 3% 10% 3% 56%;
 }
-.square_box {
-    position: relative;
-    bottom: 69px;
-    left: 99px;
+.main_image_div::after {
+    right: 2%;
+}
+
+.main_image_div::before {
+    left: 9%;
 }
 .search-container {
     position: relative;
     top: 81px;
 }
 .searchbox {
-    width: 295px;
+    width: 285px;
 }
 }
 /* *********************************** */
 @media only screen 
 and (min-width : 1224px) {
+    
 .navbar {
-padding: 60px 55px 60px 54px;
+padding: 50px 55px 50px 54px;
 }
 .textbox {
     padding: 3% 10% 3% 55%;
     }
+.main_image_div::after {
+  right: 2%;
+}
+.main_image_div::before {
+    left: 9%;
+}
 .benifit_content {
     display: flex;
 }
@@ -1193,7 +1236,8 @@ padding: 60px 55px 60px 54px;
     top: 80px;
 }
 .searchbox {
-    width: 384px;
+    width: 375px;
 }
 }
+
     
